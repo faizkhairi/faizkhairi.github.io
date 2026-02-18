@@ -9,14 +9,14 @@ export const profile = {
     "Architecting microservices",
   ],
   location: "Kuala Lumpur, Malaysia",
-  email: "faizkhairi@outlook.com",
+  email: "ifaizkhairi@gmail.com",
   github: "https://github.com/faizkhairi",
   linkedin: "https://www.linkedin.com/in/faizkhairi",
   npm: "https://www.npmjs.com/~faizkhairi",
 };
 
 export const about = {
-  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 200+ pages for a government agency, while actively contributing to open-source with 5 production-ready applications and 2 published npm packages.`,
+  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency, while actively contributing to open-source with 5 production-ready applications and 2 published npm packages.`,
   highlights: [
     { label: "Years Experience", value: "4+" },
     { label: "Live Applications", value: "5" },
@@ -170,9 +170,9 @@ export const experiences: Experience[] = [
     period: "Jun 2025 - Present",
     location: "Malaysia",
     description:
-      "Developed and integrated components of a microservices-based digital management system with 7 interconnected services, serving 200+ application pages.",
+      "Developed and integrated components of a microservices-based digital management system with 7 interconnected services, serving 500+ application pages with 130+ API modules and 300+ database models.",
     achievements: [
-      "Built 200+ responsive pages with Nuxt 3, Vue 3, and TailwindCSS",
+      "Built 500+ responsive pages with Nuxt 3, Vue 3, and TailwindCSS",
       "Reduced deployment time by 80% via CI/CD with Docker and AWS EC2/ECR",
       "Implemented JWT/Better-Auth authentication with RBAC across frontend and backend",
       "Integrated with R&D API engine services (Auth, Notifications, Job Queue)",

@@ -91,7 +91,7 @@ describe("Experience", () => {
 
   it("renders achievements", () => {
     render(<Experience />);
-    expect(screen.getByText(/200\+ responsive pages/)).toBeInTheDocument();
+    expect(screen.getByText(/500\+ responsive pages/)).toBeInTheDocument();
   });
 
   it("renders all experience entries", () => {
