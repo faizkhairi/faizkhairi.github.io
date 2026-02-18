@@ -16,9 +16,9 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-Stack Developer & DevOps Engineer with 2+ years of hands-on experience building production-grade systems. Currently architecting a digital management platform serving 200+ pages for a government agency, while actively contributing to open-source with 5 production-ready applications and 2 published npm packages.`,
+  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 200+ pages for a government agency, while actively contributing to open-source with 5 production-ready applications and 2 published npm packages.`,
   highlights: [
-    { label: "Years Experience", value: "2+" },
+    { label: "Years Experience", value: "4+" },
     { label: "Live Applications", value: "5" },
     { label: "npm Packages", value: "2" },
     { label: "Passing Tests", value: "69" },
@@ -170,14 +170,59 @@ export const experiences: Experience[] = [
     period: "Jun 2025 - Present",
     location: "Malaysia",
     description:
-      "Leading development of a comprehensive enterprise digital management platform with 200+ application pages across 7 interconnected microservices.",
+      "Developed and integrated components of a microservices-based digital management system with 7 interconnected services, serving 200+ application pages.",
     achievements: [
-      "Architected 7-service microservices platform serving 200+ pages",
-      "Reduced deployment time by 80% through CI/CD automation for 28-member team",
-      "Migrated authentication from JWT to Better-Auth with zero downtime",
-      "Integrated 5 external systems through bidirectional data flows",
-      "Mentored junior developers through code reviews and pair programming",
+      "Built 200+ responsive pages with Nuxt 3, Vue 3, and TailwindCSS",
+      "Reduced deployment time by 80% via CI/CD with Docker and AWS EC2/ECR",
+      "Implemented JWT/Better-Auth authentication with RBAC across frontend and backend",
+      "Integrated with R&D API engine services (Auth, Notifications, Job Queue)",
+      "Mentored interns and junior developers through PR reviews and code standards",
     ],
     tech: ["Nuxt 3", "Vue 3", "NestJS", "Prisma", "MySQL", "Docker", "AWS", "TypeScript"],
+  },
+  {
+    role: "Web Engineer",
+    company: "Atiera Technology Enterprise",
+    period: "Sep 2024 - May 2025",
+    location: "Remote",
+    description:
+      "Developed a comprehensive booking system engine for multiple resorts at Baron Langkawi under Sinergy Solution Sdn. Bhd.",
+    achievements: [
+      "Built scalable booking platform with real-time availability updates",
+      "Integrated Billplz payment gateway for secure online transactions",
+      "Collaborated with resort management to design system architecture",
+      "Delivered seamless reservation management for the tourism industry",
+    ],
+    tech: ["PHP", "Laravel", "MySQL", "JavaScript", "HTML", "CSS", "Billplz API"],
+  },
+  {
+    role: "Software Developer Intern",
+    company: "PSI Incontrol Sdn. Bhd.",
+    period: "Mar 2024 - Jul 2024",
+    location: "Sungai Buloh",
+    description:
+      "Contributed to internal web application development using enterprise Java technologies, enhancing department efficiency.",
+    achievements: [
+      "Developed internal web apps using Java, Spring Boot, and Vue.js",
+      "Implemented WBS sequences to improve project tracking for Project Department",
+      "Maintained and optimized existing applications with bug fixes and enhancements",
+      "Participated in code reviews and documentation to ensure code quality",
+    ],
+    tech: ["Java", "Spring Boot", "Vue.js", "HTML", "CSS", "Git"],
+  },
+  {
+    role: "Web Developer / Technician",
+    company: "Bayam Teknologi",
+    period: "Feb 2016 - Jun 2018",
+    location: "Selangor",
+    description:
+      "Early career role combining web development with IT operations, delivering websites for corporate and client projects.",
+    achievements: [
+      "Designed, developed, and hosted responsive websites for corporate clients",
+      "Built Hostel Management System for Kolej Profesional MARA Beranang",
+      "Developed College Management System for Kolej MARA Seremban",
+      "Runner-Up at Malaysia Developers Day (MYDD) 2016 — Big Data & IoT",
+    ],
+    tech: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "WordPress"],
   },
 ];

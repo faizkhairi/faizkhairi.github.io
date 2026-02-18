@@ -33,7 +33,7 @@ describe("About", () => {
 
   it("renders highlight stats", () => {
     render(<About />);
-    expect(screen.getByText("2+")).toBeInTheDocument();
+    expect(screen.getByText("4+")).toBeInTheDocument();
     expect(screen.getByText("Years Experience")).toBeInTheDocument();
   });
 });
@@ -91,7 +91,14 @@ describe("Experience", () => {
 
   it("renders achievements", () => {
     render(<Experience />);
-    expect(screen.getByText(/200\+ pages/)).toBeInTheDocument();
+    expect(screen.getByText(/200\+ responsive pages/)).toBeInTheDocument();
+  });
+
+  it("renders all experience entries", () => {
+    render(<Experience />);
+    expect(screen.getByText("Bayam Teknologi")).toBeInTheDocument();
+    expect(screen.getByText("PSI Incontrol Sdn. Bhd.")).toBeInTheDocument();
+    expect(screen.getByText("Atiera Technology Enterprise")).toBeInTheDocument();
   });
 });
 
