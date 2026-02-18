@@ -36,9 +36,22 @@ export function Hero() {
     <section className="relative flex min-h-screen items-center justify-center px-6 pt-20">
       <div className="mx-auto max-w-4xl text-center">
         <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="mb-6"
+        >
+          <img
+            src="/profile.png"
+            alt={profile.name}
+            className="mx-auto h-28 w-28 rounded-full border-2 border-primary/20 object-cover shadow-lg sm:h-32 sm:w-32"
+          />
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
         >
           <p className="mb-4 text-sm font-medium tracking-widest text-primary uppercase">
             Hey, I'm
