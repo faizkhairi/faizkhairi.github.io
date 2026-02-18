@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  --color-border: #e2e8f0;
+  --color-primary: #3b82f6;
+  --color-primary-foreground: #ffffff;
+  --color-accent: #8b5cf6;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
+  --color-background: #0f172a;
+  --color-foreground: #f1f5f9;
+  --color-muted: #1e293b;
+  --color-muted-foreground: #94a3b8;
+  --color-border: #334155;
+  --color-primary: #60a5fa;
+  --color-primary-foreground: #0f172a;
+  --color-accent: #a78bfa;
+  --color-card: #1e293b;
+  --color-card-foreground: #f1f5f9;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
