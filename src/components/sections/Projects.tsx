@@ -8,6 +8,8 @@ const typeStyles: Record<Project["type"], { badge: string; label: string }> = {
   cli: { badge: "bg-green-500/10 text-green-600 dark:text-green-400", label: "CLI Tool" },
   boilerplate: { badge: "bg-amber-500/10 text-amber-600 dark:text-amber-400", label: "Template" },
   infra: { badge: "bg-purple-500/10 text-purple-600 dark:text-purple-400", label: "Infrastructure" },
+  library: { badge: "bg-violet-500/10 text-violet-600 dark:text-violet-400", label: "npm Library" },
+  mobile: { badge: "bg-rose-500/10 text-rose-600 dark:text-rose-400", label: "Mobile App" },
 };
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {

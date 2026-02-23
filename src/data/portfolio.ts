@@ -16,12 +16,12 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency, while actively contributing to open-source with 5 production-ready applications and 2 published npm packages.`,
+  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency, while actively contributing to open-source with 5 production-ready applications and 4 published npm packages.`,
   highlights: [
     { label: "Years Experience", value: "4+" },
     { label: "Live Applications", value: "5" },
-    { label: "npm Packages", value: "2" },
-    { label: "Passing Tests", value: "69" },
+    { label: "npm Packages", value: "4" },
+    { label: "Passing Tests", value: "100+" },
   ],
 };
 
@@ -32,7 +32,7 @@ export type Project = {
   liveUrl?: string;
   githubUrl: string;
   npmInstall?: string;
-  type: "web" | "cli" | "boilerplate" | "infra";
+  type: "web" | "cli" | "boilerplate" | "infra" | "library" | "mobile";
   featured: boolean;
 };
 
@@ -68,6 +68,26 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Recipe Explorer",
+    description:
+      "Recipe browsing app with search, category filtering, and favorites. Graceful fallbacks with sample recipes when the API is unavailable.",
+    tech: ["Next.js 15", "React Query v5", "TheMealDB API", "Tailwind CSS", "Vitest"],
+    liveUrl: "https://recipe-explorer-five.vercel.app",
+    githubUrl: "https://github.com/faizkhairi/recipe-explorer",
+    type: "web",
+    featured: true,
+  },
+  {
+    title: "dev-dashboard",
+    description:
+      "Personal developer command center — GitHub contribution heatmap (GraphQL), npm download trends, and Vercel deployment status, with server-side token proxying so secrets never reach the client.",
+    tech: ["Nuxt 3", "Vue 3", "ApexCharts", "Pinia", "GitHub GraphQL", "TypeScript"],
+    liveUrl: "https://dev-dashboard-weld.vercel.app",
+    githubUrl: "https://github.com/faizkhairi/dev-dashboard",
+    type: "web",
+    featured: true,
+  },
+  {
     title: "loadtest-cli",
     description:
       "CLI tool for benchmarking HTTP endpoints with concurrent requests, latency percentiles (p50/p95/p99), and HTML reports.",
@@ -85,6 +105,35 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/faizkhairi/migra-cli",
     npmInstall: "npm i -g @faizkhairi/migra-cli",
     type: "cli",
+    featured: true,
+  },
+  {
+    title: "dev-companion",
+    description:
+      "100% offline developer toolkit for mobile — HTTP client, JSON formatter, base64/URL encoding, SHA hashing, regex tester, timestamp converter, and color tools.",
+    tech: ["Expo 54", "React Native", "NativeWind", "Gluestack UI", "Zustand", "TypeScript"],
+    githubUrl: "https://github.com/faizkhairi/dev-companion",
+    type: "mobile",
+    featured: true,
+  },
+  {
+    title: "fetch-backoff",
+    description:
+      "Zero-dependency fetch wrapper with configurable retry, exponential backoff, jitter, 202-polling, and circuit timeout. Drop-in replacement for native fetch.",
+    tech: ["TypeScript", "Vitest", "tsup", "Zero Dependencies"],
+    githubUrl: "https://github.com/faizkhairi/fetch-backoff",
+    npmInstall: "npm install fetch-backoff",
+    type: "library",
+    featured: true,
+  },
+  {
+    title: "flatfile-js",
+    description:
+      "Zero-dependency schema-first parser and generator for pipe/comma/tab-delimited flat files with type coercion, validation, streaming support, and UTC date handling.",
+    tech: ["TypeScript", "Vitest", "tsup", "Zero Dependencies"],
+    githubUrl: "https://github.com/faizkhairi/flatfile-js",
+    npmInstall: "npm install @faizkhairi/flatfile-js",
+    type: "library",
     featured: true,
   },
   {
@@ -155,11 +204,11 @@ export const experiences: Experience[] = [
     period: "Jan 2026 - Present",
     location: "Remote",
     description:
-      "Built and deployed 5 production-ready applications demonstrating full-stack capabilities, AI integration, and DevOps expertise.",
+      "Built and deployed production-ready web apps, a mobile app, and published npm packages demonstrating full-stack capabilities, AI integration, and DevOps expertise.",
     achievements: [
-      "Shipped 5 applications with 69 passing tests, all live on Vercel",
-      "Published 2 scoped packages to npm registry (@faizkhairi/*)",
-      "Built multi-provider AI code review system (OpenAI + Claude)",
+      "Shipped 10 projects with 100+ passing tests — web apps, mobile, and npm packages",
+      "Published 4 packages to npm registry (2 CLIs + 2 zero-dependency libraries)",
+      "Built multi-provider AI code review system (OpenAI + Claude) with streaming output",
       "Configured CI/CD pipelines for all projects using GitHub Actions",
     ],
     tech: ["Next.js", "React 19", "Vercel AI SDK", "Prisma 7", "Auth.js", "TypeScript", "Vitest", "GitHub Actions"],
