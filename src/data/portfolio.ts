@@ -16,10 +16,10 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency, while actively contributing to open-source with 5 production-ready applications and 4 published npm packages.`,
+  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency, while actively contributing to open-source with 6 production-ready applications and 4 published npm packages.`,
   highlights: [
     { label: "Years Experience", value: "4+" },
-    { label: "Live Applications", value: "5" },
+    { label: "Live Applications", value: "6" },
     { label: "npm Packages", value: "4" },
     { label: "Passing Tests", value: "100+" },
   ],
@@ -51,6 +51,7 @@ export const projects: Project[] = [
     description:
       "Invoice & billing system for Malaysian freelancers and SMEs. Supports SSM/SST registration, sequential invoice numbering in atomic DB transactions, partial payments, server-side PDF generation, and revenue dashboard.",
     tech: ["Next.js 16", "Prisma 7", "Neon PostgreSQL", "NextAuth v5", "React PDF", "Shadcn/ui", "Zod v4", "TypeScript"],
+    liveUrl: "https://invoicify-chi.vercel.app",
     githubUrl: "https://github.com/faizkhairi/invoicify",
     type: "web",
     featured: true,
