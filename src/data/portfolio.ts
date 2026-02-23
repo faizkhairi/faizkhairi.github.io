@@ -47,6 +47,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Invoicify",
+    description:
+      "Invoice & billing system for Malaysian freelancers and SMEs. Supports SSM/SST registration, sequential invoice numbering in atomic DB transactions, partial payments, server-side PDF generation, and revenue dashboard.",
+    tech: ["Next.js 16", "Prisma 7", "Neon PostgreSQL", "NextAuth v5", "React PDF", "Shadcn/ui", "Zod v4", "TypeScript"],
+    githubUrl: "https://github.com/faizkhairi/invoicify",
+    type: "web",
+    featured: true,
+  },
+  {
     title: "AI Code Reviewer",
     description:
       "AI code review tool + GitHub App bot. Paste code for instant streaming review, or install the bot to auto-review every pull request. Supports GPT-4o and Claude Sonnet with 4 review types across 19 languages.",
