@@ -38,6 +38,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "ApprovalKit",
+    description:
+      "Multi-step approval workflow builder for teams — configurable multi-tenant workflows with ANY/ALL approval modes, snapshotted approvers, append-only audit logs, and a real-time inbox for approvers.",
+    tech: ["Next.js 16", "Prisma 7", "Neon PostgreSQL", "NextAuth v5", "QStash", "Zod v4", "Shadcn/ui", "TypeScript"],
+    githubUrl: "https://github.com/faizkhairi/approvalworkflow",
+    type: "web",
+    featured: true,
+  },
+  {
     title: "AI Code Reviewer",
     description:
       "Multi-provider AI code review platform with real-time streaming output. Supports OpenAI GPT-4o and Claude Sonnet with 4 review types and 19 languages.",
