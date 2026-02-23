@@ -49,8 +49,8 @@ export const projects: Project[] = [
   {
     title: "AI Code Reviewer",
     description:
-      "Multi-provider AI code review platform with real-time streaming output. Supports OpenAI GPT-4o and Claude Sonnet with 4 review types and 19 languages.",
-    tech: ["Next.js 16", "React 19", "Vercel AI SDK", "OpenAI", "Claude", "TypeScript", "Tailwind"],
+      "AI code review tool + GitHub App bot. Paste code for instant streaming review, or install the bot to auto-review every pull request. Supports GPT-4o and Claude Sonnet with 4 review types across 19 languages.",
+    tech: ["Next.js 16", "GitHub App", "Prisma 7", "Neon PostgreSQL", "NextAuth v5", "QStash", "Vercel AI SDK", "TypeScript"],
     liveUrl: "https://ai-code-reviewer-two-pi.vercel.app",
     githubUrl: "https://github.com/faizkhairi/ai-code-reviewer",
     type: "web",
