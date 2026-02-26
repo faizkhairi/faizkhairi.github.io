@@ -160,6 +160,7 @@ export const projects: Project[] = [
     description:
       "PDF and DOCX to clean, grep-friendly Markdown converter. Full CLI with single-file, batch, and web server modes. Drag-and-drop web UI, table extraction, paragraph reflow, scanned PDF detection.",
     tech: ["Python 3.11+", "FastAPI", "PyMuPDF", "Click", "pytest", "mypy", "Ruff"],
+    liveUrl: "https://file2md.onrender.com",
     githubUrl: "https://github.com/faizkhairi/file2md",
     npmInstall: "pip install file2md",
     type: "cli",
