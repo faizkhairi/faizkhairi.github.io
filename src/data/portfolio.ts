@@ -4,7 +4,7 @@ export const profile = {
   taglines: [
     "Building production-grade systems",
     "Shipping 5 live applications",
-    "Publishing npm packages",
+    "Publishing npm & PyPI packages",
     "Integrating AI into products",
     "Architecting microservices",
   ],
@@ -20,7 +20,7 @@ export const about = {
   highlights: [
     { label: "Years Experience", value: "4+" },
     { label: "Live Applications", value: "6" },
-    { label: "npm Packages", value: "4" },
+    { label: "Published Packages", value: "5" },
     { label: "Passing Tests", value: "100+" },
   ],
 };
@@ -156,6 +156,16 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "file2md",
+    description:
+      "PDF and DOCX to clean, grep-friendly Markdown converter. Full CLI with single-file, batch, and web server modes. Drag-and-drop web UI, table extraction, paragraph reflow, scanned PDF detection.",
+    tech: ["Python 3.11+", "FastAPI", "PyMuPDF", "Click", "pytest", "mypy", "Ruff"],
+    githubUrl: "https://github.com/faizkhairi/file2md",
+    npmInstall: "pip install file2md",
+    type: "cli",
+    featured: true,
+  },
+  {
     title: "Microservices Demo",
     description:
       "Production-grade microservices platform with 6 NestJS services, API Gateway, BullMQ job queues, and Docker Compose orchestration.",
@@ -178,7 +188,7 @@ export const skills: Skill[] = [
   },
   {
     category: "Backend",
-    items: ["NestJS", "Node.js", "Express.js", "PHP", "Laravel", "Java", "Spring Boot", "RESTful APIs", "Streaming APIs"],
+    items: ["NestJS", "Node.js", "Express.js", "Python", "FastAPI", "PHP", "Laravel", "Java", "Spring Boot", "RESTful APIs"],
   },
   {
     category: "AI / ML",
@@ -198,7 +208,7 @@ export const skills: Skill[] = [
   },
   {
     category: "Developer Tools",
-    items: ["CLI Development", "npm Publishing", "Load Testing", "Database Migrations", "Git", "VS Code"],
+    items: ["CLI Development", "npm Publishing", "PyPI Publishing", "Load Testing", "Database Migrations", "Git", "VS Code"],
   },
   {
     category: "Testing & QA",
@@ -225,8 +235,8 @@ export const experiences: Experience[] = [
     description:
       "Built and deployed production-ready web apps, a mobile app, and published npm packages demonstrating full-stack capabilities, AI integration, and DevOps expertise.",
     achievements: [
-      "Shipped 10 projects with 100+ passing tests — web apps, mobile, and npm packages",
-      "Published 4 packages to npm registry (2 CLIs + 2 zero-dependency libraries)",
+      "Shipped 11 projects with 100+ passing tests — web apps, mobile, npm/PyPI packages",
+      "Published 5 packages to npm + PyPI registries (2 CLIs, 2 JS libraries, 1 Python package)",
       "Built multi-provider AI code review system (OpenAI + Claude) with streaming output",
       "Configured CI/CD pipelines for all projects using GitHub Actions",
     ],
