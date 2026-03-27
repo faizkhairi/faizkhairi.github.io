@@ -16,7 +16,7 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency, while actively contributing to open-source with 6 production-ready applications and 4 published npm packages.`,
+  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency, while actively contributing to established open-source projects (biome, dify, wagmi) and maintaining 6 production-ready applications with 5 published npm/PyPI packages.`,
   highlights: [
     { label: "Years Experience", value: "4+" },
     { label: "Live Applications", value: "6" },
@@ -238,10 +238,11 @@ export const experiences: Experience[] = [
     achievements: [
       "Shipped 11 projects with 100+ passing tests — web apps, mobile, npm/PyPI packages",
       "Published 5 packages to npm + PyPI registries (2 CLIs, 2 JS libraries, 1 Python package)",
+      "Contributed to biomejs/biome (Rust), langgenius/dify (Python), microsoft/physical-ai-toolchain, and wevm/wagmi — all merged",
       "Built multi-provider AI code review system (OpenAI + Claude) with streaming output",
       "Configured CI/CD pipelines for all projects using GitHub Actions",
     ],
-    tech: ["Next.js", "React 19", "Vercel AI SDK", "Prisma 7", "Auth.js", "TypeScript", "Vitest", "GitHub Actions"],
+    tech: ["Next.js", "React 19", "Vercel AI SDK", "Prisma 7", "Auth.js", "TypeScript", "Rust", "Vitest", "GitHub Actions"],
   },
   {
     role: "Software Developer",
