@@ -238,7 +238,7 @@ export const experiences: Experience[] = [
     achievements: [
       "Shipped 14 projects with 100+ passing tests — web apps, mobile app, npm/PyPI packages",
       "Published 6 packages to npm + PyPI registries (3 CLIs, 2 JS libraries, 1 Python package) with 970+ total npm downloads",
-      "Merged PRs to nuxt/ui (x2), biomejs/biome (x2), langgenius/dify, directus/directus, wevm/wagmi, and microsoft — accepted by senior maintainers across JavaScript, Rust, and Python ecosystems",
+      "Contributed 13 merged PRs across 10 open-source repos — nuxt/ui (×2), biomejs/biome (×2), langgenius/dify, directus/directus, wevm/wagmi, microsoft/physical-ai-toolchain, nusmods, and others",
       "Built multi-provider AI code review system (OpenAI + Claude) with streaming output",
       "Configured CI/CD pipelines for all projects using GitHub Actions",
     ],
