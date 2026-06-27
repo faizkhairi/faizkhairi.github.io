@@ -3,8 +3,8 @@ export const profile = {
   title: "Full-Stack Developer & DevOps Engineer",
   taglines: [
     "Building production-grade systems",
-    "Shipping 5 live applications",
-    "Publishing npm & PyPI packages",
+    "Shipping 14 projects across web & mobile",
+    "Contributing to nuxt/ui, biome & dify",
     "Integrating AI into products",
     "Architecting microservices",
   ],
@@ -16,11 +16,11 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency, while actively contributing to established open-source projects (biome, dify, wagmi) and maintaining 6 production-ready applications with 5 published npm/PyPI packages.`,
+  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency. Actively contributing to major open-source projects — merged PRs to nuxt/ui, biomejs/biome, langgenius/dify, directus, and others — with 14 production projects, 6 published packages (5 npm + 1 PyPI), and 970+ total npm downloads.`,
   highlights: [
     { label: "Years Experience", value: "4+" },
-    { label: "Live Applications", value: "6" },
-    { label: "Published Packages", value: "5" },
+    { label: "Projects Shipped", value: "14" },
+    { label: "Published Packages", value: "6" },
     { label: "Passing Tests", value: "100+" },
   ],
 };
@@ -236,13 +236,13 @@ export const experiences: Experience[] = [
     description:
       "Built and deployed production-ready web apps, a mobile app, and published npm packages demonstrating full-stack capabilities, AI integration, and DevOps expertise.",
     achievements: [
-      "Shipped 11 projects with 100+ passing tests — web apps, mobile, npm/PyPI packages",
-      "Published 5 packages to npm + PyPI registries (2 CLIs, 2 JS libraries, 1 Python package)",
-      "Contributed to biomejs/biome (Rust), langgenius/dify (Python), microsoft/physical-ai-toolchain, and wevm/wagmi — all merged",
+      "Shipped 14 projects with 100+ passing tests — web apps, mobile app, npm/PyPI packages",
+      "Published 6 packages to npm + PyPI registries (3 CLIs, 2 JS libraries, 1 Python package) with 970+ total npm downloads",
+      "Merged PRs to nuxt/ui (x2), biomejs/biome (x2), langgenius/dify, directus/directus, wevm/wagmi, and microsoft — accepted by senior maintainers across JavaScript, Rust, and Python ecosystems",
       "Built multi-provider AI code review system (OpenAI + Claude) with streaming output",
       "Configured CI/CD pipelines for all projects using GitHub Actions",
     ],
-    tech: ["Next.js", "React 19", "Vercel AI SDK", "Prisma 7", "Auth.js", "TypeScript", "Rust", "Vitest", "GitHub Actions"],
+    tech: ["Next.js", "React 19", "Vercel AI SDK", "Prisma ORM", "Auth.js", "TypeScript", "Rust", "Vitest", "GitHub Actions"],
   },
   {
     role: "Software Developer",
