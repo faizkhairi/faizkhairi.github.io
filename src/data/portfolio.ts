@@ -175,6 +175,15 @@ export const projects: Project[] = [
     type: "infra",
     featured: false,
   },
+  {
+    title: "db-patterns-demo",
+    description:
+      "NestJS + Prisma database engineering patterns: indexing, N+1 queries, transactions, connection pooling, query plans, backups, read replicas.",
+    tech: ["NestJS", "Prisma", "PostgreSQL"],
+    githubUrl: "https://github.com/faizkhairi/db-patterns-demo",
+    type: "infra",
+    featured: false,
+  },
 ];
 
 export type Skill = {
