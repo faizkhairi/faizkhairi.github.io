@@ -3,7 +3,7 @@ export const profile = {
   title: "Full-Stack Developer & DevOps Engineer",
   taglines: [
     "Building production-grade systems",
-    "Shipping 14 projects across web & mobile",
+    "Shipping 16 projects across web & mobile",
     "Contributing to nuxt/ui, biome & dify",
     "Integrating AI into products",
     "Architecting microservices",
@@ -16,10 +16,10 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency. Actively contributing to major open-source projects — merged PRs to nuxt/ui, biomejs/biome, langgenius/dify, directus, and others — with 14 production projects, 6 published packages (5 npm + 1 PyPI), and 970+ total npm downloads.`,
+  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency. Actively contributing to major open-source projects (merged PRs to nuxt/ui, biomejs/biome, langgenius/dify, directus, and others), with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 970+ total npm downloads.`,
   highlights: [
     { label: "Years Experience", value: "4+" },
-    { label: "Projects Shipped", value: "14" },
+    { label: "Projects Shipped", value: "16" },
     { label: "Published Packages", value: "6" },
     { label: "Passing Tests", value: "100+" },
   ],
@@ -37,6 +37,16 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    title: "consensus-lab",
+    description:
+      "Deterministic Raft consensus simulator in the browser: crash servers and partition the network while a live oracle checks every safety property, switch on one of three classic Raft bugs, and let a seeded fuzzer find the failing run and shrink it to one or two faults.",
+    tech: ["TypeScript", "React 19", "Vite", "Web Workers", "fast-check", "Playwright"],
+    githubUrl: "https://github.com/faizkhairi/consensus-lab",
+    liveUrl: "https://faizkhairi.github.io/consensus-lab/",
+    type: "web",
+    featured: true,
+  },
   {
     title: "ApprovalKit",
     description:
@@ -245,7 +255,7 @@ export const experiences: Experience[] = [
     description:
       "Built and deployed production-ready web apps, a mobile app, and published npm packages demonstrating full-stack capabilities, AI integration, and DevOps expertise.",
     achievements: [
-      "Shipped 14 projects with 100+ passing tests — web apps, mobile app, npm/PyPI packages",
+      "Shipped 16 projects with 100+ passing tests: web apps, mobile app, npm/PyPI packages",
       "Published 6 packages to npm + PyPI registries (3 CLIs, 2 JS libraries, 1 Python package) with 970+ total npm downloads",
       "Contributed 13 merged PRs across 10 open-source repos — nuxt/ui (×2), biomejs/biome (×2), langgenius/dify, directus/directus, wevm/wagmi, microsoft/physical-ai-toolchain, nusmods, and others",
       "Built multi-provider AI code review system (OpenAI + Claude) with streaming output",

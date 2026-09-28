@@ -18,9 +18,11 @@ export function Hero() {
     }
 
     if (isDeleting && displayText === "") {
-      setIsDeleting(false);
-      setTaglineIndex((prev) => (prev + 1) % profile.taglines.length);
-      return;
+      const timeout = setTimeout(() => {
+        setIsDeleting(false);
+        setTaglineIndex((prev) => (prev + 1) % profile.taglines.length);
+      }, speed);
+      return () => clearTimeout(timeout);
     }
 
     const timeout = setTimeout(() => {

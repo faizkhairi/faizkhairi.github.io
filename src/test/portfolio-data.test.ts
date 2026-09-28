@@ -42,8 +42,16 @@ describe("portfolio data", () => {
         expect(p.description.length).toBeGreaterThan(20);
         expect(p.tech.length).toBeGreaterThan(0);
         expect(p.githubUrl).toMatch(/^https:\/\/github\.com\//);
-        expect(["web", "cli", "boilerplate", "infra"]).toContain(p.type);
+        expect(["web", "cli", "boilerplate", "infra", "library", "mobile"]).toContain(p.type);
       });
+    });
+
+    it("every project count claim matches the project list", () => {
+      const count = String(projects.length);
+      expect(about.highlights.find((h) => h.label === "Projects Shipped")?.value).toBe(count);
+      expect(profile.taglines.join(" ")).toContain(`Shipping ${count} projects`);
+      expect(about.summary).toContain(`with ${count} production projects`);
+      expect(experiences.flatMap((e) => e.achievements).join(" ")).toContain(`Shipped ${count} projects`);
     });
 
     it("has featured projects", () => {
@@ -51,16 +59,17 @@ describe("portfolio data", () => {
       expect(featured.length).toBeGreaterThanOrEqual(3);
     });
 
-    it("CLI projects have npm install command", () => {
+    it("CLI projects have an npm or pip install command", () => {
       const cliProjects = projects.filter((p) => p.type === "cli");
       cliProjects.forEach((p) => {
-        expect(p.npmInstall).toBeTruthy();
-        expect(p.npmInstall).toContain("npm");
+        expect(p.npmInstall).toMatch(/^(npm|pip) /);
       });
     });
 
-    it("web projects have live URLs", () => {
-      const webProjects = projects.filter((p) => p.type === "web");
+    it("web projects have live URLs, except those not yet deployed", () => {
+      const notDeployed = ["ApprovalKit"];
+      const webProjects = projects.filter((p) => p.type === "web" && !notDeployed.includes(p.title));
+      expect(webProjects.length).toBeGreaterThan(0);
       webProjects.forEach((p) => {
         expect(p.liveUrl).toMatch(/^https:\/\//);
       });

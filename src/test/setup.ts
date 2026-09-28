@@ -6,10 +6,7 @@ class MockIntersectionObserver implements IntersectionObserver {
   readonly rootMargin: string = "";
   readonly thresholds: ReadonlyArray<number> = [];
   callback: IntersectionObserverCallback;
-  constructor(
-    callback: IntersectionObserverCallback,
-    _options?: IntersectionObserverInit,
-  ) {
+  constructor(callback: IntersectionObserverCallback) {
     this.callback = callback;
     // Immediately trigger callback with all entries as intersecting
     setTimeout(() => {
