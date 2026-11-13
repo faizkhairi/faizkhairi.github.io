@@ -85,13 +85,13 @@ describe("Experience", () => {
 
   it("renders experience entries", () => {
     render(<Experience />);
-    expect(screen.getByText("Software Developer")).toBeInTheDocument();
+    expect(screen.getByText("Software Developer (Full-Stack & DevOps Lead)")).toBeInTheDocument();
     expect(screen.getByText("Datascience Sdn. Bhd.")).toBeInTheDocument();
   });
 
   it("renders achievements", () => {
     render(<Experience />);
-    expect(screen.getByText(/500\+ responsive pages/)).toBeInTheDocument();
+    expect(screen.getByText(/Authored 2,800\+ merged PRs/)).toBeInTheDocument();
   });
 
   it("renders all experience entries", () => {

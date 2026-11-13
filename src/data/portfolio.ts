@@ -16,7 +16,7 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-Stack Developer & DevOps Engineer with 4+ years of professional software development experience spanning enterprise systems, freelance web engineering, and open-source contributions. Currently developing a digital management platform serving 500+ pages with 130+ API modules across a 7-service architecture for a government agency. Actively contributing to major open-source projects (merged PRs to nuxt/ui, biomejs/biome, langgenius/dify, directus, and others), with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 970+ total npm downloads.`,
+  summary: `Full-stack developer with 4+ years of experience across enterprise systems, DevOps, and freelance delivery. At my current role I took a government digital management platform from prototype to production as the full-stack and DevOps lead: 750+ pages, 260+ API controllers, and 400+ data models, released across 5 environments on AWS. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
   highlights: [
     { label: "Years Experience", value: "4+" },
     { label: "Projects Shipped", value: "16" },
@@ -256,7 +256,7 @@ export const experiences: Experience[] = [
       "Built and deployed production-ready web apps, a mobile app, and published npm packages demonstrating full-stack capabilities, AI integration, and DevOps expertise.",
     achievements: [
       "Shipped 16 projects with 100+ passing tests: web apps, mobile app, npm/PyPI packages",
-      "Published 6 packages to npm + PyPI registries (3 CLIs, 2 JS libraries, 1 Python package) with 970+ total npm downloads",
+      "Published 6 packages to npm + PyPI registries (3 CLIs, 2 JS libraries, 1 Python package) with 2,000+ total npm downloads",
       "Contributed 13 merged PRs across 10 open-source repos — nuxt/ui (×2), biomejs/biome (×2), langgenius/dify, directus/directus, wevm/wagmi, microsoft/physical-ai-toolchain, nusmods, and others",
       "Built multi-provider AI code review system (OpenAI + Claude) with streaming output",
       "Configured CI/CD pipelines for all projects using GitHub Actions",
@@ -264,20 +264,21 @@ export const experiences: Experience[] = [
     tech: ["Next.js", "React 19", "Vercel AI SDK", "Prisma ORM", "Auth.js", "TypeScript", "Rust", "Vitest", "GitHub Actions"],
   },
   {
-    role: "Software Developer",
+    role: "Software Developer (Full-Stack & DevOps Lead)",
     company: "Datascience Sdn. Bhd.",
     period: "Jun 2025 - Present",
     location: "Malaysia",
     description:
-      "Developed and integrated components of a microservices-based digital management system with 7 interconnected services, serving 500+ application pages with 130+ API modules and 300+ database models.",
+      "Full-stack and DevOps lead on a government digital management platform (13 services, 5 environments), alongside an AI-assisted SDLC product.",
     achievements: [
-      "Built 500+ responsive pages with Nuxt 3, Vue 3, and TailwindCSS",
-      "Reduced deployment time by 80% via CI/CD with Docker and AWS EC2/ECR",
-      "Implemented JWT/Better-Auth authentication with RBAC across frontend and backend",
-      "Integrated with R&D API engine services (Auth, Notifications, Job Queue)",
-      "Mentored interns and junior developers through PR reviews and code standards",
+      "Built the clickable prototype, then laid the core NestJS backend and Nuxt frontend foundation (scaffolds, shared patterns, worked examples) and trained the team on the Git workflow",
+      "Authored 2,800+ merged PRs and reviewed 1,700+ PRs from 10+ engineers as gatekeeper of the main branch",
+      "Lead developer of the integration platform (Nuxt 4, Prisma, Redis) linking the core platform to about 10 external systems",
+      "Owned CI/CD for 13 services across 5 environments with Gitea Actions; codified the production AWS ECS Fargate stacks as CloudFormation with automated deploys",
+      "Contained an attack on the self-hosted Git server and took AWS Security Hub critical findings from 9 to 0",
+      "Cut a slow listing query from 20 s to under 20 ms",
     ],
-    tech: ["Nuxt 3", "Vue 3", "NestJS", "Prisma", "MySQL", "Docker", "AWS", "TypeScript"],
+    tech: ["Nuxt 3", "Vue 3", "NestJS", "Prisma", "MySQL", "Redis", "Docker", "AWS", "AWS ECS", "CloudFormation", "TypeScript"],
   },
   {
     role: "Web Engineer",
