@@ -1,14 +1,14 @@
 export const profile = {
   name: "Faiz Khairi",
-  title: "Full-Stack Developer & DevOps Engineer",
+  title: "Senior Full-Stack Software Engineer",
   taglines: [
     "Building production-grade systems",
     "Shipping 16 projects across web & mobile",
     "Contributing to nuxt/ui, biome & dify",
     "Integrating AI into products",
-    "Architecting microservices",
+    "Leading CI/CD and releases",
   ],
-  location: "Kuala Lumpur, Malaysia",
+  location: "Gombak, Kuala Lumpur, Malaysia",
   email: "ifaizkhairi@gmail.com",
   github: "https://github.com/faizkhairi",
   linkedin: "https://www.linkedin.com/in/faizkhairi",
@@ -16,9 +16,9 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-stack software engineer (TypeScript, Nuxt/Vue, NestJS, MySQL, AWS) with a Bachelor of IT in Software Engineering and 4+ years across enterprise systems, DevOps, and freelance delivery. In my current role I laid the team's groundwork on a government digital management platform (the first CI/CD pipelines, developer guides and shared patterns), and I built and lead its integration platform, which links about 10 external systems. The platform runs to 750+ pages, 260+ API controllers, and 400+ data models, released across 5 environments on AWS. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
+  summary: `Senior full-stack software engineer (TypeScript, Nuxt/Vue, NestJS, MySQL, AWS) who also leads DevOps and infrastructure. I have been building web systems since 2016 and hold a Bachelor of IT in Software Engineering. On a government digital platform I laid the team's groundwork: I took over the core codebases, wrote their first CI/CD pipelines and developer guides, and trained the team on Git. I designed, built and lead its integration hub, an API gateway and job engine that links about 10 external systems, and I ran its releases across five environments on AWS. I also deliver in Java/Spring Boot and PHP/Laravel. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
   highlights: [
-    { label: "Years Experience", value: "4+" },
+    { label: "Building Since", value: "2016" },
     { label: "Projects Shipped", value: "16" },
     { label: "Published Packages", value: "6" },
     { label: "Passing Tests", value: "100+" },
@@ -208,19 +208,19 @@ export const skills: Skill[] = [
   },
   {
     category: "Backend",
-    items: ["NestJS", "Node.js", "Express.js", "Python", "FastAPI", "PHP", "Laravel", "Java", "Spring Boot", "RESTful APIs"],
+    items: ["NestJS", "Node.js", "Express.js", "Python", "FastAPI", "PHP", "Laravel", "Java", "Spring Boot", "WordPress", "RESTful APIs", "BullMQ", "Socket.IO"],
   },
   {
     category: "AI / ML",
-    items: ["Vercel AI SDK", "OpenAI GPT-4o", "Claude Sonnet", "Streaming AI", "Custom Prompts"],
+    items: ["Vercel AI SDK", "OpenAI GPT-4o", "Claude Sonnet", "Self-hosted vLLM", "RAG", "Streaming AI", "Custom Prompts"],
   },
   {
     category: "Database",
-    items: ["Prisma (v6 & v7)", "PostgreSQL", "MySQL", "SQLite", "Knex.js", "Neon Serverless", "Database Design"],
+    items: ["Prisma (v6 & v7)", "PostgreSQL", "MySQL", "Redis", "SQLite", "Knex.js", "Neon Serverless", "Database Design"],
   },
   {
     category: "DevOps & Cloud",
-    items: ["Docker", "AWS (EC2, ECR)", "Vercel", "GitHub Actions", "CI/CD", "Nginx", "Linux"],
+    items: ["Docker", "Podman", "AWS (ECS, EC2, ECR, CloudFormation)", "Infrastructure as Code", "Vercel", "GitHub Actions", "Gitea Actions", "CI/CD", "Nginx", "Linux"],
   },
   {
     category: "Architecture",
@@ -232,7 +232,7 @@ export const skills: Skill[] = [
   },
   {
     category: "Testing & QA",
-    items: ["Vitest", "React Testing Library", "Playwright", "Unit Testing", "Integration Testing", "API Testing"],
+    items: ["Vitest", "React Testing Library", "Playwright", "JUnit", "PHPUnit", "Unit Testing", "Integration Testing", "API Testing"],
   },
 ];
 
@@ -247,6 +247,25 @@ export type Experience = {
 };
 
 export const experiences: Experience[] = [
+  {
+    role: "Software Developer (Full-Stack & DevOps Lead)",
+    company: "Datascience Sdn. Bhd.",
+    period: "Jun 2025 - Present",
+    location: "Malaysia",
+    description:
+      "Full-stack and DevOps lead on a government digital management platform (10 services, 5 environments), alongside AIDevX, an AI-assisted SDLC product.",
+    achievements: [
+      "Designed and built the integration hub (Nuxt 4, Prisma, BullMQ) as lead developer: an API gateway and job engine linking the core platform to about 10 external systems, with per-partner auth and rate limits, plus queued jobs with retries and dead-letter queues. In production since Aug 2026",
+      "Led development of the complaint-handling workflow (NestJS, Nuxt, Prisma, MySQL) across officer, field and supervisor roles, with role-based dashboards and the notification backend (Socket.IO, email, SMS, WhatsApp)",
+      "Co-built the clickable prototype, then took over the core NestJS and Nuxt codebases and laid the groundwork the team built on: the first CI/CD pipelines, the frontend Docker setup, developer guides, shared patterns and worked examples",
+      "Owned CI/CD and releases for 10 services across 5 environments with Gitea Actions; codified the production AWS ECS stacks (EC2 launch type) as CloudFormation with drift checks and automated deploys, then trained the in-house DevOps team to run them",
+      "Reviewed the team's pull requests and trained engineers on the Git workflow",
+      "Contained an attack on the self-hosted Git server and took AWS Security Hub critical controls from 9 failing to 0",
+      "Cut slow listing endpoints from about 20 s to under 100 ms by rewriting MySQL queries and adding an index",
+      "AIDevX: deployed a self-hosted LLM stack (vLLM) on a client GPU server with a Podman CD pipeline",
+    ],
+    tech: ["Nuxt 3", "Nuxt 4", "Vue 3", "NestJS", "Prisma", "MySQL", "Redis", "BullMQ", "Socket.IO", "Docker", "Gitea Actions", "AWS ECS", "CloudFormation", "TypeScript"],
+  },
   {
     role: "Open Source Contributor",
     company: "Personal Projects",
@@ -264,42 +283,37 @@ export const experiences: Experience[] = [
     tech: ["Next.js", "React 19", "Vercel AI SDK", "Prisma ORM", "Auth.js", "TypeScript", "Rust", "Vitest", "GitHub Actions"],
   },
   {
-    role: "Software Developer (Full-Stack & DevOps Lead)",
-    company: "Datascience Sdn. Bhd.",
-    period: "Jun 2025 - Present",
-    location: "Malaysia",
+    role: "Executive Officer (Contract)",
+    company: "Akademi Kenegaraan Malaysia",
+    period: "Feb 2025 - May 2025",
+    location: "Putrajaya",
     description:
-      "Full-stack and DevOps lead on a government digital management platform (10 services, 5 environments), alongside an AI-assisted SDLC product.",
+      "Contract role at a government academy under the Prime Minister's Office.",
     achievements: [
-      "Co-built the clickable prototype, then took over the core NestJS backend and Nuxt frontend, prepared them with fixes, scaffolds, shared patterns and worked examples, and trained the team on the Git workflow",
-      "Authored 2,800+ merged PRs and reviewed 1,600+ PRs from 25+ engineers",
-      "Lead developer of the integration platform (Nuxt 4, Prisma, Redis) linking the core platform to about 10 external systems",
-      "Owned CI/CD for 10 services across 5 environments with Gitea Actions; codified the production AWS ECS stacks (EC2 launch type) as CloudFormation with drift checks and automated deploys",
-      "Contained an attack on the self-hosted Git server and took AWS Security Hub critical controls from 9 failing to 0",
-      "Cut slow listing endpoints from about 20 s to under 100 ms",
+      "Planned and coordinated national training programs across states (facilitators, speakers, secretariat)",
+      "Advised requirements for an internal camp-booking web application; wrote program documentation and stakeholder reports",
     ],
-    tech: ["Nuxt 3", "Vue 3", "NestJS", "Prisma", "MySQL", "Redis", "Docker", "AWS", "AWS ECS", "CloudFormation", "TypeScript"],
+    tech: ["Requirements Analysis", "Program Coordination", "Documentation"],
   },
   {
-    role: "Web Engineer",
+    role: "Web Engineer (Own Business, Contract Projects)",
     company: "Atiera Technology Enterprise",
     period: "Sep 2024 - May 2025",
     location: "Remote",
     description:
-      "Developed a comprehensive booking system engine for multiple resorts at Baron Langkawi under Sinergy Solution Sdn. Bhd.",
+      "Bid for and delivered client contracts through my own business for a multi-resort hospitality client.",
     achievements: [
-      "Built scalable booking platform with real-time availability updates",
-      "Integrated Billplz payment gateway for secure online transactions",
-      "Collaborated with resort management to design system architecture",
-      "Delivered seamless reservation management for the tourism industry",
+      "Built the booking engine (Laravel, PHP, MySQL) with real-time availability and automated booking confirmations",
+      "Integrated the Billplz payment gateway for secure online checkout",
+      "Managed and extended the client's WordPress site",
     ],
-    tech: ["PHP", "Laravel", "MySQL", "JavaScript", "HTML", "CSS", "Billplz API"],
+    tech: ["PHP", "Laravel", "MySQL", "WordPress", "JavaScript", "Billplz API"],
   },
   {
     role: "Software Developer Intern",
     company: "PSI Incontrol Sdn. Bhd.",
     period: "Mar 2024 - Jul 2024",
-    location: "Sungai Buloh",
+    location: "Sungai Buloh, Selangor",
     description:
       "Contributed to internal web application development using enterprise Java technologies, enhancing department efficiency.",
     achievements: [
@@ -311,10 +325,23 @@ export const experiences: Experience[] = [
     tech: ["Java", "Spring Boot", "Vue.js", "HTML", "CSS", "Git"],
   },
   {
-    role: "Web Developer / Technician",
+    role: "Freelance Web Developer (Own Business, Part-Time)",
+    company: "Atiera Technology Enterprise",
+    period: "Sep 2018 - Mar 2023",
+    location: "Remote",
+    description:
+      "Part-time client websites through my own business, alongside studies and other work.",
+    achievements: [
+      "Shipped an Islamic academy site with online student registration (2022) and a furniture-company landing page with a customizable checkout and online payment (2021)",
+      "Built an awareness and event landing page for International Autism Children Malaysia (2018)",
+    ],
+    tech: ["HTML", "CSS", "JavaScript", "Online Payments"],
+  },
+  {
+    role: "Web Developer / Technician Officer (Part-Time, alongside HND)",
     company: "Bayam Teknologi",
     period: "Feb 2016 - Jun 2018",
-    location: "Selangor",
+    location: "Selangor (Hybrid)",
     description:
       "Early career role combining web development with IT operations, delivering websites for corporate and client projects.",
     achievements: [

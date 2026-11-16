@@ -17,7 +17,7 @@ export function Experience() {
           </h2>
           <h3 className="mb-4 text-3xl font-bold sm:text-4xl">Where I've Worked</h3>
           <p className="mb-12 max-w-2xl text-muted-foreground">
-            From enterprise microservices to open-source CLI tools: building production
+            From enterprise integration platforms to open-source CLI tools: building production
             software across the stack.
           </p>
         </motion.div>
@@ -25,7 +25,7 @@ export function Experience() {
         <div className="relative space-y-12 pl-8 before:absolute before:left-0 before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-border">
           {experiences.map((exp, i) => (
             <motion.div
-              key={exp.company}
+              key={`${exp.company}-${exp.period}`}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

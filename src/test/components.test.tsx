@@ -13,7 +13,7 @@ describe("Hero", () => {
   it("renders name and title", () => {
     render(<Hero />);
     expect(screen.getByText("Faiz Khairi")).toBeInTheDocument();
-    expect(screen.getByText("Full-Stack Developer & DevOps Engineer")).toBeInTheDocument();
+    expect(screen.getByText("Senior Full-Stack Software Engineer")).toBeInTheDocument();
   });
 
   it("renders CTA buttons", () => {
@@ -33,8 +33,9 @@ describe("About", () => {
 
   it("renders highlight stats", () => {
     render(<About />);
-    expect(screen.getByText("4+")).toBeInTheDocument();
-    expect(screen.getByText("Years Experience")).toBeInTheDocument();
+    expect(screen.getByText("2016")).toBeInTheDocument();
+    expect(screen.getByText("Building Since")).toBeInTheDocument();
+    expect(screen.queryByText("Years Experience")).not.toBeInTheDocument();
   });
 });
 
@@ -74,6 +75,8 @@ describe("Skills", () => {
     render(<Skills />);
     expect(screen.getByText("React 19")).toBeInTheDocument();
     expect(screen.getByText("TypeScript")).toBeInTheDocument();
+    expect(screen.getByText("WordPress")).toBeInTheDocument();
+    expect(screen.getByText("Infrastructure as Code")).toBeInTheDocument();
   });
 });
 
@@ -91,14 +94,33 @@ describe("Experience", () => {
 
   it("renders achievements", () => {
     render(<Experience />);
-    expect(screen.getByText(/Authored 2,800\+ merged PRs/)).toBeInTheDocument();
+    expect(screen.getByText(/Designed and built the integration hub \(Nuxt 4, Prisma, BullMQ\)/)).toBeInTheDocument();
+    expect(screen.getByText("Managed and extended the client's WordPress site")).toBeInTheDocument();
+    expect(screen.queryByText(/2,800/)).not.toBeInTheDocument();
   });
 
   it("renders all experience entries", () => {
     render(<Experience />);
     expect(screen.getByText("Bayam Teknologi")).toBeInTheDocument();
     expect(screen.getByText("PSI Incontrol Sdn. Bhd.")).toBeInTheDocument();
-    expect(screen.getByText("Atiera Technology Enterprise")).toBeInTheDocument();
+    expect(screen.getByText("Akademi Kenegaraan Malaysia")).toBeInTheDocument();
+    expect(screen.getAllByText("Atiera Technology Enterprise")).toHaveLength(2);
+  });
+
+  it("labels own-business and part-time roles", () => {
+    render(<Experience />);
+    expect(screen.getByText("Web Engineer (Own Business, Contract Projects)")).toBeInTheDocument();
+    expect(screen.getByText("Freelance Web Developer (Own Business, Part-Time)")).toBeInTheDocument();
+    expect(screen.getByText("Web Developer / Technician Officer (Part-Time, alongside HND)")).toBeInTheDocument();
+  });
+
+  it("describes the hospitality client generically", () => {
+    render(<Experience />);
+    expect(
+      screen.getByText(
+        "Bid for and delivered client contracts through my own business for a multi-resort hospitality client.",
+      ),
+    ).toBeInTheDocument();
   });
 });
 
@@ -118,7 +140,7 @@ describe("Contact", () => {
 
   it("renders location", () => {
     render(<Contact />);
-    expect(screen.getByText("Kuala Lumpur, Malaysia")).toBeInTheDocument();
+    expect(screen.getByText("Gombak, Kuala Lumpur, Malaysia")).toBeInTheDocument();
   });
 });
 
