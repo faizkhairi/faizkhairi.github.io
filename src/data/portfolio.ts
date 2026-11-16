@@ -16,7 +16,7 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-stack software engineer (TypeScript, Nuxt/Vue, NestJS, MySQL, AWS) with a Bachelor's in Software Engineering and 4+ years across enterprise systems, DevOps, and freelance delivery. In my current role I laid the team's groundwork on a government digital management platform (the first CI/CD pipelines, developer guides and shared patterns), and I built and lead its integration platform, which links about 10 external systems. The platform runs to 750+ pages, 260+ API controllers, and 400+ data models, released across 5 environments on AWS. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
+  summary: `Full-stack software engineer (TypeScript, Nuxt/Vue, NestJS, MySQL, AWS) with a Bachelor of IT in Software Engineering and 4+ years across enterprise systems, DevOps, and freelance delivery. In my current role I laid the team's groundwork on a government digital management platform (the first CI/CD pipelines, developer guides and shared patterns), and I built and lead its integration platform, which links about 10 external systems. The platform runs to 750+ pages, 260+ API controllers, and 400+ data models, released across 5 environments on AWS. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
   highlights: [
     { label: "Years Experience", value: "4+" },
     { label: "Projects Shipped", value: "16" },
