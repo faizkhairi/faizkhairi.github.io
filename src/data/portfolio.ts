@@ -16,7 +16,7 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Full-stack developer with 4+ years of experience across enterprise systems, DevOps, and freelance delivery. At my current role I took a government digital management platform from prototype to its first production releases as the full-stack and DevOps lead: 750+ pages, 260+ API controllers, and 400+ data models, released across 5 environments on AWS. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
+  summary: `Full-stack software engineer (TypeScript, Nuxt/Vue, NestJS, MySQL, AWS) with a Bachelor's in Software Engineering and 4+ years across enterprise systems, DevOps, and freelance delivery. In my current role I laid the team's groundwork on a government digital management platform (the first CI/CD pipelines, developer guides and shared patterns), and I built and lead its integration platform, which links about 10 external systems. The platform runs to 750+ pages, 260+ API controllers, and 400+ data models, released across 5 environments on AWS. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
   highlights: [
     { label: "Years Experience", value: "4+" },
     { label: "Projects Shipped", value: "16" },
@@ -50,7 +50,7 @@ export const projects: Project[] = [
   {
     title: "ApprovalKit",
     description:
-      "Multi-step approval workflow builder for teams — configurable multi-tenant workflows with ANY/ALL approval modes, snapshotted approvers, append-only audit logs, and a real-time inbox for approvers.",
+      "Multi-step approval workflow builder for teams: configurable multi-tenant workflows with ANY/ALL approval modes, snapshotted approvers, append-only audit logs, and a real-time inbox for approvers.",
     tech: ["Next.js 16", "Prisma 7", "Neon PostgreSQL", "NextAuth v5", "QStash", "Zod v4", "Shadcn/ui", "TypeScript"],
     githubUrl: "https://github.com/faizkhairi/approvalworkflow",
     type: "web",
@@ -109,7 +109,7 @@ export const projects: Project[] = [
   {
     title: "dev-dashboard",
     description:
-      "Personal developer command center — GitHub contribution heatmap (GraphQL), npm download trends, and Vercel deployment status, with server-side token proxying so secrets never reach the client.",
+      "Personal developer command center: GitHub contribution heatmap (GraphQL), npm download trends, and Vercel deployment status, with server-side token proxying so secrets never reach the client.",
     tech: ["Nuxt 3", "Vue 3", "ApexCharts", "Pinia", "GitHub GraphQL", "TypeScript"],
     liveUrl: "https://dev-dashboard-weld.vercel.app",
     githubUrl: "https://github.com/faizkhairi/dev-dashboard",
@@ -139,7 +139,7 @@ export const projects: Project[] = [
   {
     title: "dev-companion",
     description:
-      "100% offline developer toolkit for mobile — HTTP client, JSON formatter, base64/URL encoding, SHA hashing, regex tester, timestamp converter, and color tools.",
+      "100% offline developer toolkit for mobile: HTTP client, JSON formatter, base64/URL encoding, SHA hashing, regex tester, timestamp converter, and color tools.",
     tech: ["Expo 54", "React Native", "NativeWind", "Gluestack UI", "Zustand", "TypeScript"],
     githubUrl: "https://github.com/faizkhairi/dev-companion",
     type: "mobile",
@@ -257,7 +257,7 @@ export const experiences: Experience[] = [
     achievements: [
       "Shipped 16 projects with 100+ passing tests: web apps, mobile app, npm/PyPI packages",
       "Published 6 packages to npm + PyPI registries (3 CLIs, 2 JS libraries, 1 Python package) with 2,000+ total npm downloads",
-      "Contributed 13 merged PRs across 10 open-source repos — nuxt/ui (×2), biomejs/biome (×2), langgenius/dify, directus/directus, wevm/wagmi, microsoft/physical-ai-toolchain, nusmods, and others",
+      "Contributed 13 merged PRs across 10 open-source repos: nuxt/ui (×2), biomejs/biome (×2), langgenius/dify, directus/directus, wevm/wagmi, microsoft/physical-ai-toolchain, nusmods, and others",
       "Built multi-provider AI code review system (OpenAI + Claude) with streaming output",
       "Configured CI/CD pipelines for all projects using GitHub Actions",
     ],
@@ -321,7 +321,7 @@ export const experiences: Experience[] = [
       "Designed, developed, and hosted responsive websites for corporate clients",
       "Built Hostel Management System for Kolej Profesional MARA Beranang",
       "Developed College Management System for Kolej MARA Seremban",
-      "Runner-Up at Malaysia Developers Day (MYDD) 2016 — Big Data & IoT",
+      "Runner-Up at Malaysia Developers Day (MYDD) 2016, Big Data & IoT",
     ],
     tech: ["PHP", "HTML", "CSS", "JavaScript", "MySQL", "WordPress"],
   },
