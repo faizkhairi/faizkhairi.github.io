@@ -44,7 +44,7 @@ export function Contact() {
           </h2>
           <h3 className="mb-4 text-3xl font-bold sm:text-4xl">Let's Connect</h3>
           <p className="mb-12 text-muted-foreground">
-            Open to senior full-stack software engineering roles, including DevOps and integration work.
+            Open to senior full-stack software engineering roles, including DevOps and integration work. Available from January 2027.
           </p>
         </motion.div>
 

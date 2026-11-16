@@ -16,7 +16,7 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Senior full-stack software engineer (TypeScript, Nuxt/Vue, NestJS, MySQL, AWS) who also leads DevOps and infrastructure. I have been building web systems since 2016 and hold a Bachelor of IT in Software Engineering. On a government digital platform I laid the team's groundwork: I took over the core codebases, wrote their first CI/CD pipelines and developer guides, and trained the team on Git. I designed, built and lead its integration hub, an API gateway and job engine that links about 10 external systems, and I ran its releases across five environments on AWS. I also deliver in Java/Spring Boot and PHP/Laravel. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
+  summary: `Senior full-stack software engineer (TypeScript, Nuxt/Vue, NestJS, MySQL, AWS) who also leads DevOps and infrastructure. I have been building web systems since 2016 and hold a Bachelor of IT in Software Engineering (Universiti Kuala Lumpur, 2024). On a government digital platform I laid the team's groundwork: I took over the core codebases, wrote their first CI/CD pipelines and developer guides, and trained the team on Git. I designed, built and lead its integration hub, an API gateway and job engine that links about 10 external systems, and I ran its releases across five environments on AWS. I also deliver in Java/Spring Boot and PHP/Laravel. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
   highlights: [
     { label: "Building Since", value: "2016" },
     { label: "Projects Shipped", value: "16" },
@@ -224,7 +224,7 @@ export const skills: Skill[] = [
   },
   {
     category: "Architecture",
-    items: ["Microservices", "System Design", "API Design", "Serverless", "Service Integration", "OAuth / RBAC"],
+    items: ["API Gateway", "System Design", "API Design", "Serverless", "Service Integration", "OAuth / RBAC"],
   },
   {
     category: "Developer Tools",
@@ -262,7 +262,7 @@ export const experiences: Experience[] = [
       "Reviewed the team's pull requests and trained engineers on the Git workflow",
       "Contained an attack on the self-hosted Git server and took AWS Security Hub critical controls from 9 failing to 0",
       "Cut slow listing endpoints from about 20 s to under 100 ms by rewriting MySQL queries and adding an index",
-      "AIDevX: deployed a self-hosted LLM stack (vLLM) on a client GPU server with a Podman CD pipeline",
+      "AIDevX: deployed a self-hosted LLM stack (vLLM) on a client GPU server with a Podman CD pipeline; React, Vite, LLM + RAG",
     ],
     tech: ["Nuxt 3", "Nuxt 4", "Vue 3", "NestJS", "Prisma", "MySQL", "Redis", "BullMQ", "Socket.IO", "Docker", "Gitea Actions", "AWS ECS", "CloudFormation", "TypeScript"],
   },
@@ -272,11 +272,12 @@ export const experiences: Experience[] = [
     period: "Jan 2026 - Present",
     location: "Remote",
     description:
-      "Built and deployed production-ready web apps, a mobile app, and published npm packages demonstrating full-stack capabilities, AI integration, and DevOps expertise.",
+      "Side projects and upstream contributions on my own time: web apps, a mobile app, and published npm and PyPI packages.",
     achievements: [
       "Shipped 16 projects with 100+ passing tests: web apps, mobile app, npm/PyPI packages",
       "Published 6 packages to npm + PyPI registries (3 CLIs, 2 JS libraries, 1 Python package) with 2,000+ total npm downloads",
       "Contributed 13 merged PRs across 10 open-source repos: nuxt/ui (×2), biomejs/biome (×2), langgenius/dify, directus/directus, wevm/wagmi, microsoft/physical-ai-toolchain, nusmods, and others",
+      "CI-tested public starters: Spring Boot + Vue (Java 25, Spring Security, JUnit 5, Testcontainers) and Laravel + Vue (Inertia, Sanctum, PHPUnit, PHPStan, Playwright)",
       "Built multi-provider AI code review system (OpenAI + Claude) with streaming output",
       "Configured CI/CD pipelines for all projects using GitHub Actions",
     ],
