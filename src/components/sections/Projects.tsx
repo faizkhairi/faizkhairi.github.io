@@ -95,7 +95,7 @@ export function Projects() {
           </h2>
           <h3 className="mb-4 text-3xl font-bold sm:text-4xl">What I've Built</h3>
           <p className="mb-12 max-w-2xl text-muted-foreground">
-            Production applications, published npm packages, and infrastructure demos — all with
+            Production applications, published npm packages, and infrastructure demos, all with
             live deployments, automated tests, and CI/CD pipelines.
           </p>
         </motion.div>

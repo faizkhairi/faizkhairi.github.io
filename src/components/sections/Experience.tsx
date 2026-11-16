@@ -17,7 +17,7 @@ export function Experience() {
           </h2>
           <h3 className="mb-4 text-3xl font-bold sm:text-4xl">Where I've Worked</h3>
           <p className="mb-12 max-w-2xl text-muted-foreground">
-            From enterprise microservices to open-source CLI tools — building production
+            From enterprise microservices to open-source CLI tools: building production
             software across the stack.
           </p>
         </motion.div>
