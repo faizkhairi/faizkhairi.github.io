@@ -140,7 +140,7 @@ describe("Contact", () => {
 
   it("renders location", () => {
     render(<Contact />);
-    expect(screen.getByText("Gombak, Kuala Lumpur, Malaysia")).toBeInTheDocument();
+    expect(screen.getByText("Kuala Lumpur, Malaysia")).toBeInTheDocument();
   });
 });
 

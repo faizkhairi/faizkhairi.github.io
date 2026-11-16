@@ -8,7 +8,7 @@ export const profile = {
     "Integrating AI into products",
     "Leading CI/CD and releases",
   ],
-  location: "Gombak, Kuala Lumpur, Malaysia",
+  location: "Kuala Lumpur, Malaysia",
   email: "ifaizkhairi@gmail.com",
   github: "https://github.com/faizkhairi",
   linkedin: "https://www.linkedin.com/in/faizkhairi",
