@@ -3,7 +3,7 @@ export const profile = {
   title: "Senior Full-Stack Software Engineer",
   taglines: [
     "Building production-grade systems",
-    "Shipping 16 projects across web & mobile",
+    "Shipping 17 projects across web & mobile",
     "Contributing to nuxt/ui, biome & dify",
     "Integrating AI into products",
     "Leading CI/CD and releases",
@@ -16,10 +16,10 @@ export const profile = {
 };
 
 export const about = {
-  summary: `Senior full-stack software engineer (TypeScript, Nuxt/Vue, NestJS, MySQL, AWS) who also leads DevOps and infrastructure. I have been building web systems since 2016 and hold a Bachelor of IT in Software Engineering (Universiti Kuala Lumpur, 2024). On a government digital platform I laid the team's groundwork: I took over the core codebases, wrote their first CI/CD pipelines and developer guides, and trained the team on Git. I designed, built and lead its integration hub, an API gateway and job engine that links about 10 external systems, and I ran its releases across five environments on AWS. I also deliver in Java/Spring Boot and PHP/Laravel. On my own time I build open-source tools, with 16 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
+  summary: `Senior full-stack software engineer (TypeScript, Nuxt/Vue, NestJS, MySQL, AWS) who also leads DevOps and infrastructure. I have been building web systems since 2016 and hold a Bachelor of IT in Software Engineering (Universiti Kuala Lumpur, 2024). On a government digital platform I laid the team's groundwork: I took over the core codebases, wrote their first CI/CD pipelines and developer guides, and trained the team on Git. I designed, built and lead its integration hub, an API gateway and job engine that links about 10 external systems, and I ran its releases across five environments on AWS. I also deliver in Java/Spring Boot and PHP/Laravel. On my own time I build open-source tools, with 17 production projects, 6 published packages (5 npm + 1 PyPI), and 2,000+ npm downloads, plus 13 merged upstream PRs (nuxt/ui, biomejs/biome, langgenius/dify, directus, and others).`,
   highlights: [
     { label: "Building Since", value: "2016" },
-    { label: "Projects Shipped", value: "16" },
+    { label: "Projects Shipped", value: "17" },
     { label: "Published Packages", value: "6" },
     { label: "Passing Tests", value: "100+" },
   ],
@@ -37,6 +37,16 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    title: "Interchange",
+    description:
+      "Vendor-neutral integration platform and API gateway. Partners call one entry point that authenticates them per system, rate-limits and logs every request, while outbound and scheduled work runs from a Postgres job queue with retries, dead letters and alerts. The live demo runs the whole admin console in your browser as Admin, Operator or Viewer.",
+    tech: ["Next.js 16", "TypeScript", "Drizzle ORM", "Neon PostgreSQL", "Zod v4", "QStash", "Playwright"],
+    githubUrl: "https://github.com/faizkhairi/interchange-demo",
+    liveUrl: "https://interchange-livid.vercel.app/demo",
+    type: "web",
+    featured: true,
+  },
   {
     title: "consensus-lab",
     description:
@@ -274,7 +284,7 @@ export const experiences: Experience[] = [
     description:
       "Side projects and upstream contributions on my own time: web apps, a mobile app, and published npm and PyPI packages.",
     achievements: [
-      "Shipped 16 projects with 100+ passing tests: web apps, mobile app, npm/PyPI packages",
+      "Shipped 17 projects with 100+ passing tests: web apps, mobile app, npm/PyPI packages",
       "Published 6 packages to npm + PyPI registries (3 CLIs, 2 JS libraries, 1 Python package) with 2,000+ total npm downloads",
       "Contributed 13 merged PRs across 10 open-source repos: nuxt/ui (×2), biomejs/biome (×2), langgenius/dify, directus/directus, wevm/wagmi, microsoft/physical-ai-toolchain, nusmods, and others",
       "CI-tested public starters: Spring Boot + Vue (Java 25, Spring Security, JUnit 5, Testcontainers) and Laravel + Vue (Inertia, Sanctum, PHPUnit, PHPStan, Playwright)",
